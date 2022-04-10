@@ -1,0 +1,218 @@
+/*-------------------------------Helheten-----------------------------------------*/
+
+.flexbox-container-shell {
+  display: flex;
+  /*background-color: rgba(255, 242, 127, 0.397);*/
+}
+@media only screen and (max-width: 767px) {
+  .flexbox-container-shell {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.flexbox-container-sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: aquamarine;
+}
+/*------------Beroende Main axis och cross axis bör man använda sig av align-items: ELLER justify content--------------*/
+@media only screen and (max-width: 767px) {
+  .flexbox-container-sidebar {
+    align-items: center;
+  }
+}
+
+nav {
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+.navbutton {
+	border-radius: 5px;
+	background-color: #bb883b;
+	color: #333;
+	text-decoration: none;
+	font-size: 18px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	text-align: center;
+	padding: 10px;
+	font-family: 'Courier New', monospace;
+	font-weight: bold;
+
+}
+
+.flexbox-container-main {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  /*background-color: lightcoral;*/
+}
+
+/*-------------------------------Items-----------------------------------------*/
+.flexbox-item {
+  margin: 10px;
+  background-color: #dfdfdf;
+}
+
+.flexbox-logo {
+  flex-direction: row;
+  min-height: 100px;
+  width: 200px;
+}
+@media only screen and (max-width: 767px) {
+  .flexbox-logo {
+    display: none;
+  }
+}
+
+.logo {
+	width: 100%;
+}
+
+.flexbox-menu {
+  min-height: 200px;
+  width: 200px;
+}
+@media only screen and (max-width: 767px) {
+  .flexbox-menu {
+    width: 95%;
+    justify-content: center;
+    gap: 10px 10px;
+  }
+}
+
+
+/*------------Kom ihåg att flexbox fungerar på en parent to child basis--------------*/
+/*------------DVS jag behöver lägga till display:flex i dessa containers om jag vill 
+att de ska använda sig flex properties display: flex; & flex-direction: row;--------------*/
+
+.flexbox-item-3:not(hr) {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 767px) {
+  .flexbox-item-3:not(hr) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/*-------------------------------Showcase-----------------------------------------*/
+.flexbox-film-of-interest {
+  min-height: 300px;
+  flex-grow: 1;
+}
+
+.hidden1 {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+@media only screen and (max-width: 767px) {
+  .hidden1 {
+    flex-direction: column-reverse;
+  }
+}
+
+.hidden2 {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+@media only screen and (max-width: 767px) {
+  .hidden2 {
+    flex-direction: column-reverse;
+  }
+}
+
+.hidden3 {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+@media only screen and (max-width: 767px) {
+  .hidden3 {
+    flex-direction: column-reverse;
+  }
+}
+
+.interest-list {
+  list-style: none;
+  font-size: 25px;
+}
+
+/*#ScrollToView{
+  transition-duration: 1s;
+}*/
+
+.flexbox-sidfot {
+  height: 100px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+/*-------------------------------Subitems-----------------------------------------*/
+.flexbox-item-movies {
+  max-width: 250px;
+  margin: 20px;
+  min-height: 100px;
+  background-color: lightseagreen;
+  border-radius: 5px;
+}
+@media only screen and (max-width: 767px) {
+  .flexbox-item-movies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    /*justify-content: center;*/
+  }
+}
+
+
+.flexbox-item-movies p {
+	padding: 8px;
+	text-align: center;
+}
+
+.movie-poster {
+  width: 100%;
+}
+/*@media only screen and (max-width: 767px) {
+  .movie-poster {
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+  }
+}*/
+
+.movie-poster-showcase {
+	width: 60%;
+  max-width: 500px;
+  padding: 20px;
+}
+
+/*-------------------------------Segment Lines-----------------------------------------*/
+hr {
+	/*display: flex;
+    flex-direction: row;*/
+	width: 90%;
+	/*border-width: 2px;
+	border-bottom: black;*/
+  /*margin-left: 0;
+  margin-right: 0;*/
+  margin: auto;
+	/*border: 0;
+	border-top: 1px solid black;*/
+}

@@ -1,0 +1,28 @@
+[
+    {
+        "Title": "True Romance",
+        "IMDB-Rating": "7.9",
+        "Genres": ["Crime", "Drama", "Romance"],
+        "Release-date": "1993",
+        "Director": "Quentin Tarantino",
+        "URL": "https://www.imdb.com/title/tt0108399/?ref_=ttfc_fc_tt"
+    },
+
+    {
+        "Title": "Pretty Woman",
+        "IMDB-Rating": "7.1",
+        "Genres": ["Comedy", "Romance"],
+        "Release-date": "1990",
+        "Director": "Garry Marshall",
+        "URL": "https://www.imdb.com/title/tt0100405/?ref_=nv_sr_srsg_3"
+    },
+
+    {
+        "Title": "Once Upon a Time In Hollywood",
+        "IMDB-Rating": "7.6",
+        "Genres": ["Comedy", "Drama"],
+        "Release-date": "2019",
+        "Director": "Quentin Tarantino",
+        "URL": "https://www.imdb.com/title/tt7131622/?ref_=nv_sr_srsg_0"
+    }
+]
